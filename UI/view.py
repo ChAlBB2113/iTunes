@@ -1,5 +1,9 @@
 import flet as ft
 
+from UI import controller
+from UI.controller import Controller
+from model import model
+
 
 class View(ft.UserControl):
     def __init__(self, page: ft.Page):
@@ -43,6 +47,8 @@ class View(ft.UserControl):
             ft.Container(self._btnAnalisiComp, width=300)
         ], alignment=ft.MainAxisAlignment.CENTER)
         self._page.controls.append(row2)
+
+
 
         #ROW3
         self._txtInSoglia = ft.TextField(label="Soglia")
